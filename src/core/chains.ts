@@ -32,7 +32,6 @@ import {
   aurora,
   canto,
   flowMainnet,
-  swanMainnet,
   
   // Testnets
   sepolia,
@@ -57,9 +56,10 @@ import {
   celoAlfajores,
   goerli,
   holesky,
-  flowTestnet,
-  swanProxima
+  flowTestnet
 } from 'viem/chains';
+
+import { swan, swanProxima } from './swan.js';
 
 // Default configuration values
 export const DEFAULT_RPC_URL = 'https://eth.llamarpc.com';
@@ -99,7 +99,7 @@ export const chainMap: Record<number, Chain> = {
   1313161554: aurora,
   7700: canto,
   747: flowMainnet,
-  254: swanMainnet,
+  254: swan,
   
   // Testnets
   11155111: sepolia,
@@ -174,7 +174,7 @@ export const networkNameMap: Record<string, number> = {
   'aurora': 1313161554,
   'canto': 7700,
   'flow': 747,
-  'swanMainnet': 254,
+  'swan': 254,
   
   // Testnets
   'sepolia': 11155111,
@@ -220,7 +220,7 @@ export const networkNameMap: Record<string, number> = {
   'goerli': 5,
   'holesky': 17000,
   'flow-testnet': 545,
-  'swanProxima': 20241133
+  'swan-proxima': 20241133
 };
 
 // Map chain IDs to RPC URLs
@@ -260,7 +260,7 @@ export const rpcUrlMap: Record<number, string> = {
   254: 'https://mainnet-rpc-01.swanchain.org',
   
   // Testnets
-  11155111: 'https://sepolia.drpc.org',
+  11155111: 'https://ethereum-sepolia-rpc.publicnode.com',
   11155420: 'https://sepolia.optimism.io',
   421614: 'https://sepolia-rpc.arbitrum.io/rpc',
   84532: 'https://sepolia.base.org',

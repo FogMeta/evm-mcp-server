@@ -32,6 +32,7 @@ import {
   aurora,
   canto,
   flowMainnet,
+  swanMainnet,
   
   // Testnets
   sepolia,
@@ -56,7 +57,8 @@ import {
   celoAlfajores,
   goerli,
   holesky,
-  flowTestnet
+  flowTestnet,
+  swanProxima
 } from 'viem/chains';
 
 // Default configuration values
@@ -97,6 +99,7 @@ export const chainMap: Record<number, Chain> = {
   1313161554: aurora,
   7700: canto,
   747: flowMainnet,
+  254: swanMainnet,
   
   // Testnets
   11155111: sepolia,
@@ -122,6 +125,7 @@ export const chainMap: Record<number, Chain> = {
   5: goerli,
   17000: holesky,
   545: flowTestnet,
+  20241133: swanProxima
 };
 
 // Map network names to chain IDs for easier reference
@@ -170,6 +174,7 @@ export const networkNameMap: Record<string, number> = {
   'aurora': 1313161554,
   'canto': 7700,
   'flow': 747,
+  'swanMainnet': 254,
   
   // Testnets
   'sepolia': 11155111,
@@ -215,6 +220,7 @@ export const networkNameMap: Record<string, number> = {
   'goerli': 5,
   'holesky': 17000,
   'flow-testnet': 545,
+  'swanProxima': 20241133
 };
 
 // Map chain IDs to RPC URLs
@@ -251,6 +257,7 @@ export const rpcUrlMap: Record<number, string> = {
   1313161554: 'https://mainnet.aurora.dev',
   7700: 'https://canto.gravitychain.io',
   747: 'https://mainnet.evm.nodes.onflow.org',
+  254: 'https://mainnet-rpc-01.swanchain.org',
   
   // Testnets
   11155111: 'https://sepolia.drpc.org',
@@ -276,6 +283,7 @@ export const rpcUrlMap: Record<number, string> = {
   5: 'https://rpc.ankr.com/eth_goerli',
   17000: 'https://ethereum-holesky.publicnode.com',
   545: 'https://testnet.evm.nodes.onflow.org',
+  20241133: 'https://rpc-proxima.swanchain.io'
 };
 
 /**

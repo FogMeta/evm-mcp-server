@@ -5,7 +5,7 @@ export const swan = /*#__PURE__*/ defineChain({
     id: 254,
     name: 'swan Mainnet',
     network: 'swanMainnet',
-    nativeCurrency: { name: 'swanu', symbol: 'SWANU', decimals: 18 },
+    nativeCurrency: { name: 'swan', symbol: 'SWAN', decimals: 18 },
     rpcUrls: {
       default: {
         http: ['https://mainnet-rpc-01.swanchain.org'],
@@ -18,7 +18,7 @@ export const swan = /*#__PURE__*/ defineChain({
       },
     },
     contracts: {
-        swanu: {
+        swan: {
         address: '0xBb4eC1b56cB624863298740Fd264ef2f910d5564',
         blockCreated: 3061663,
       },
